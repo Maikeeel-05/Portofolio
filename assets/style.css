@@ -102,27 +102,49 @@ section {
     color: #333;
 }
 
-#hobbies {
-    padding: 40px;
-    margin: 30px auto;
-    max-width: 850px;
+#projects {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #F8FAFC;
+}
+
+#projects h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
     background: white;
+    padding: 20px;
+    width: 300px;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.hobby-list {
-    list-style: none;
-    padding: 0;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.hobby-list li {
-    background: #00aaff;
-    color: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    font-size: 18px;
+.project-card h3 {
+    font-size: 20px;
+    color: #1976D2;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
 }
 
 /* Footer */
